@@ -1,38 +1,49 @@
 .App {
   height: 100vh;
   max-width: 100vw;
-  --border-bottom: 4px solid #e0354b;
-  --padding: 1.2em;
-  --heading-font-size: 1.4rem;
-  --gen-font-size: 1rem;
-  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, poppins;
 }
-  
+
 .App-header {
-  font-size: var(--heading-font-size);
-  color: #e0354b;
   display: flex;
+  font-size: 1.4rem;
   align-items: center;
-  padding: var(--padding);
-  border-bottom: var(--border-bottom);
+  color: #e0354b;
+  border-bottom: 3px solid #e0354b;
 }
-  
+
 .App-header img {
-  width: 200px;
   height: 200px;
+  width: 200px;
 }
-  
+
+h1 {
+  font-size: 2.5rem;
+}
+
+
 .App-body {
-  font-size: var(--gen-font-size);
-  padding: calc(var(--padding) * 2);
-  border-bottom: var(--border-bottom);
-  height: 45%;
-  font-weight: bold;
+  color:black;
+  position: absolute;
+  font-size: 1.1rem;
+  padding: 2rem;
+  margin-top: 20rem;
 }
-  
+
 .App-footer {
-  font-size: var(--gen-font-size);
-  padding: var(--padding);
-  text-align: center;
+  position: absolute;
+  color:black;
+  margin-top: 59rem;
+  margin-left: 30rem;
   font-style: italic;
+  font-size: 1.1rem;
+}
+
+.App-header::after {
+  content: "";
+  position: absolute;
+  top: 34rem;
+  width: 99%;
+  border-top: 3px solid #e0354b;
 }

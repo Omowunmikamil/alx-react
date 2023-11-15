@@ -1,5 +1,6 @@
 import logo from './holberton.jpg';
 import './App.css';
+import {getFullYear, getFooterCopy} from './utils';
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
           <p>Login to access the full dashboard</p>
         </div>
         <div className="App-footer">
-          <p>Copyright 2020 - holberton School</p>
+          <p></p>
+          <p>Copyright {getFooterCopy()} - {getFullYear()}</p>
         </div>
     </div>
   );

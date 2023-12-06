@@ -16,7 +16,7 @@ NotificationItem.propTypes = {
   value: PropTypes.string,
   __html: PropTypes.shape({
     html: PropTypes.string,
-  });
+  }),
 };
 
 NotificationItem.defaultProps = {

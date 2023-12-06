@@ -13,7 +13,7 @@ class App extends React.Component {
     { id: 1, name: "ES6", credit: 60 },
     { id: 2, name: "Webpack", credit: 20 },
     { id: 3, name: "React", credit: 40 },
-  ],
+  ];
 
   listNotifications = [
     { id: 1, type: "default", value: "New course available" },
@@ -26,15 +26,15 @@ class App extends React.Component {
       <React.Fragment>
         <div className="App">
           <div className="heading-section">
-	    <Notifications listNotifications={this.listNotifications} />
-	    <Header />
-	  </div>
-	  {this.props.isLoggedIn ? <CourseList listCourses={this.listCourses} /> : <Login />}
-	  <Footer />
-	</div>
+            <Notifications listNotifications={this.listNotifications} />
+            <Header />
+          </div>
+          {this.props.isLoggedIn ? <CourseList listCourses={this.listCourses} /> : <Login />}
+          <Footer />
+        </div>
       </React.Fragment>
-    ),
-  },
+    );
+  }
 }
 
 App.defaultProps = {

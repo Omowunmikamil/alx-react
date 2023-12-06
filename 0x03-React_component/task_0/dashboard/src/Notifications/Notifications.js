@@ -25,21 +25,21 @@ function Notifications({ displayDrawer, listNotifications }) {
               top: "3px",
               cursor: "pointer",
               outline: "none",
-	    }}
-	    aria-label="Close"
+            }}
+            aria-label="Close"
             onClick={(e) => {
               console.log("Close button has been clicked");
-	    }}
-	  >
+            }}
+          >
             <img src={closeIcon} alt="close icon" width="10px" />
           </button>
           {listNotifications.length != 0 ? <p>Here is the list of notifications</p> : null}
-	  <ul>
-	    {listNotifications.length == 0 ? <NotificationItem type="default" value="No new notification for now" /> : null}
+          <ul>
+            {listNotifications.length == 0 ? <NotificationItem type="default" value="No new notification for now" /> : null}
             {listNotifications.map((val, idx) => {
               return <NotificationItem type={val.type} value={val.value} html={val.html} key={val.id} />;
-	    })}
-	  </ul>
+            })}
+          </ul>
         </div>
       ) : null}
     </>
